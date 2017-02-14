@@ -11,8 +11,10 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -20,17 +22,44 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        
+        <svg id="svg">
+            <symbol id="menu-hamburger" viewBox="0 0 24 24">
+                <path d="M3 5h18q0.414 0 0.707 0.293t0.293 0.707-0.293 0.707-0.707 0.293h-18q-0.414 0-0.707-0.293t-0.293-0.707 0.293-0.707 0.707-0.293zM3 17h18q0.414 0 0.707 0.293t0.293 0.707-0.293 0.707-0.707 0.293h-18q-0.414 0-0.707-0.293t-0.293-0.707 0.293-0.707 0.707-0.293zM3 11h18q0.414 0 0.707 0.293t0.293 0.707-0.293 0.707-0.707 0.293h-18q-0.414 0-0.707-0.293t-0.293-0.707 0.293-0.707 0.707-0.293z"></path>
+            </symbol>
+        </svg>
+        
+        <header class="header">
+            
+            <div class="header-navbar">
+                <div class="wrapper">
+                    <div class="logo">
+                        <img src="img/grupo-p-logo.png" height="43px" alt="Logo">
+                    </div>
+                    <div class="menu-button">
+                        <a href="#" class="btn-menu" aria-label="Left Align">
+                            <svg><use xlink:href="#menu-hamburger"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-content">
+                <div>
+                    <h1>media planning para la era digital</h1>
+                    <p>Somos la agencia con más profesionales certificados en el mercado, ofrecemos un servicio de Estrategia y planeamiento Online del más Alto Nivel.</p>
+                    <a href="#">casos</a>
+                </div>
+            </div>
+            
+        </header>
+        
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
